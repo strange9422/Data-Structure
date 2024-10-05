@@ -1,4 +1,11 @@
 //Creating stack using array
+/* Time complexity
+ * push()=O(1)
+ * pop()=O(1)
+ * size()=O(1)
+ * isEmpty()=O(1)
+ * isFull()=O(1)
+ */
 
 package Stack;
 
