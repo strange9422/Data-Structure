@@ -1,7 +1,8 @@
 package graph;
 
 import java.util.ArrayList;
-
+//time complexity is O(2^v where v  is the number of vertices)
+//space complexity is O(V) where V is the number of vertices
 public class allpaths_graph {
     
     static class Edge{
