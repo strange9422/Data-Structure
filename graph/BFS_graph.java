@@ -19,7 +19,7 @@ public class BFS_graph {
             this.dest = dest;
         }
     }
-    public static void CreatingGraph(ArrayList<Edge> graph[]){
+    static void CreatingGraph(ArrayList<Edge> graph[]){
         for(int i=0;i<graph.length;i++){
             graph[i] = new ArrayList<>();
         }
@@ -35,17 +35,8 @@ public class BFS_graph {
         graph[6].add(new Edge(6,10));
         graph[7].add(new Edge(12,11));
     }
-    public static void printGraph(ArrayList<Edge> graph[]){
-        for(int i=0;i<graph.length;i++){
-            System.out.print(i+" -> ");
-            for(Edge e: graph[i]){
-                System.out.print("("+e.src+" "+e.dest+") ");
-            }
-            System.out.println();
-        }
-    }
     
-    public static void bfs(ArrayList<Edge> graph[],Queue<Integer> q,boolean visited[],int start){
+    static void bfs(ArrayList<Edge> graph[],Queue<Integer> q,boolean visited[],int start){
         q.add(start);
         while(!q.isEmpty()){
             int curr=q.remove();

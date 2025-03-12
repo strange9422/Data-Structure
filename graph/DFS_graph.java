@@ -10,7 +10,7 @@ public class DFS_graph {
             this.dest = dest;
         }
     }
-    public static void CreatingGraph(ArrayList<Edge> graph[]){
+     static void CreatingGraph(ArrayList<Edge> graph[]){
         for(int i=0;i<graph.length;i++){
             graph[i] = new ArrayList<>();
         }
@@ -27,16 +27,8 @@ public class DFS_graph {
         graph[11].add(new Edge(11,12));
 
     }
-    public static void printGraph(ArrayList<Edge> graph[]){
-        for(int i=0;i<graph.length;i++){
-            System.out.print(i+" -> ");
-            for(Edge e: graph[i]){
-                System.out.print("("+e.src+" "+e.dest+") ");
-            }
-            System.out.println();
-        }
-    }
-    public static void dfs(ArrayList<Edge> graph[],int str,boolean visited[]){
+    
+     static void dfs(ArrayList<Edge> graph[],int str,boolean visited[]){
         visited[str]=true;
         System.out.print(str+" ");
         for(Edge e: graph[str]){

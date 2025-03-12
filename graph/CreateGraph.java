@@ -10,7 +10,7 @@ public class CreateGraph {
             this.dest = dest;
         }
     }
-    public static void CreatingGraph(ArrayList<Edge> graph[]){
+    static void CreatingGraph(ArrayList<Edge> graph[]){
         for(int i=0;i<graph.length;i++){
             graph[i] = new ArrayList<>();
         }
@@ -25,7 +25,7 @@ public class CreateGraph {
         graph[5].add(new Edge(5,9));
         graph[6].add(new Edge(6,10));
     }
-    public static void printGraph(ArrayList<Edge> graph[]){
+    static void printGraph(ArrayList<Edge> graph[]){
         for(int i=0;i<graph.length;i++){
             System.out.print(i+" -> ");
             for(Edge e: graph[i]){
