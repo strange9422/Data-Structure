@@ -1,5 +1,5 @@
 package Sorting_algorithms;
-
+//find the max element and put it in last
 public class bubble_sort {
     static  int [] bubble_sorting(int arr[]){
         int n=arr.length;
